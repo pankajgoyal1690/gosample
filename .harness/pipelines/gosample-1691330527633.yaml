@@ -21,7 +21,9 @@ pipeline:
                   identifier: gobuild
                   name: go_build
                   spec:
-                    command: go build
+                    command: |-
+                      echo "Welcome to Harness CI"
+                      go build
                   timeout: ""
                   type: Run
               - step:
